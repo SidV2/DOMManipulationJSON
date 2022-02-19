@@ -1,0 +1,29 @@
+{
+    "boxes": [
+        {
+            "title": "Box 1",
+            "color": "blue"
+        },
+        {
+            "title":"Box 2",
+            "color": "red"
+        },
+        {
+            "title": "Box 3",
+            "color": "black"
+        },
+        {
+            "title": "Box 1",
+            "color": "blue"
+        },
+        {
+            "title": "Box 1",
+            "color": "black"
+        },
+        {
+            "title": "Box 1",
+            "color": "Green"
+        }
+    ]
+}
+

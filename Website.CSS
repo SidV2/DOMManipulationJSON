@@ -1,0 +1,16 @@
+body {
+    box-sizing: border-box;
+}
+
+.left_side_form {
+    padding: 5px;
+}
+
+.left_side_form div {
+    padding: 5px 0 5px 0;
+}
+
+.box_container {
+    display: flex;
+    justify-content: space-around;
+}

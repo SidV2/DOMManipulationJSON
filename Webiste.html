@@ -1,0 +1,27 @@
+<head>
+    <title> DOM Building </title>
+    <link rel="stylesheet" href="Website.CSS">
+</head>
+<body>
+    <div class="site_container">
+        <div class="site_heading">
+            <h3>Hello!!</h1>
+        </div>
+        <div class="site_body">
+            <div class="site_body_left_side">
+                <form id="left_side_form" class='left_side_form' onsubmit="return mySubmitFunction(event)">
+                    <div>
+                        <input name='textfield1' id='textfield1' placeholder="Title" type='text'>
+                    </div>
+                    <div>
+                        <input name='textfield2' id='textfield2' placeholder="Color" type='text'>
+                    </div>
+                    <button type='submit'>Filter boxes</button>
+                </form>
+                <div id="box_container" class="box_container">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Website.js"></script>
+</body>
