@@ -3,13 +3,10 @@ window.onload = function () {
 }
 
 let boxesData = [];
-function fetchBoxes() {
-   const boxesArray = fetch('DomJsonData.json')
-      .then((response) => response.json())
-      .then((data) => {
-         boxesData = data.boxes;
-         constructBoxesinUI();
-      });
+async function fetchBoxes() {
+   const boxesArray = await (await fetch('DomJsonData.json')).json();
+   boxesData = boxesArray.boxes;
+   constructBoxesinUI();
 }
 
 function constructBoxesinUI() {
