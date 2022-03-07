@@ -4,9 +4,13 @@ window.onload = function () {
 
 let boxesData = [];
 async function fetchBoxes() {
-   const boxesArray = await (await fetch('DomJsonData.json')).json();
-   boxesData = boxesArray.boxes;
-   constructBoxesinUI();
+   try {
+      const boxesArray = await (await fetch('DomJsonData.json')).json();
+      boxesData = boxesArray.boxes;
+      constructBoxesinUI();
+   } catch (err) {
+      console.log(err);
+   }
 }
 
 function constructBoxesinUI() {
